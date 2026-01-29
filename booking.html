@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Fitting - Rebby Fashion World | Schedule Appointment</title>
+    <meta name="description" content="Book your fitting appointment at Rebby Fashion World. Schedule a consultation for custom tailoring, styling, or bridal design in Uyo.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="logo">Rebby Fashion</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Fitting</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <div class="section-subtitle">Get Started</div>
+                <h1 class="page-title">Book Your Fitting Today</h1>
+                <p>Take the first step towards your perfect outfit. Schedule a fitting session with us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking-page">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info fade-in">
+                    <h2>Why Book With Us?</h2>
+                    <p>Experience personalized service that puts your style and comfort first.</p>
+                    
+                    <div class="booking-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon pink">✨</div>
+                            <div class="benefit-text">
+                                <h4>Expert Consultation</h4>
+                                <p>Get professional style advice tailored to your needs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon blue">📏</div>
+                            <div class="benefit-text">
+                                <h4>Precise Measurements</h4>
+                                <p>Professional measurements for perfect fitting</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon yellow">🎨</div>
+                            <div class="benefit-text">
+                                <h4>Design Flexibility</h4>
+                                <p>Customize every aspect of your outfit</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon pink">⏰</div>
+                            <div class="benefit-text">
+                                <h4>Convenient Scheduling</h4>
+                                <p>Choose a time that works best for you</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-contact">
+                        <h3>Prefer to Call?</h3>
+                        <p>Contact us directly:</p>
+                        <a href="tel:+2349026940268" class="contact-link">📞 090 2694 0268</a>
+                        <a href="https://wa.me/2349026940268" class="contact-link whatsapp-link">💬 WhatsApp Us</a>
+                    </div>
+                </div>
+                
+                <div class="booking-form-container fade-in">
+                    <form id="bookingForm">
+                        <h3>Schedule Your Appointment</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="090XXXXXXXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="custom-tailoring">Custom Tailoring</option>
+                                <option value="ready-to-wear">Ready-to-Wear Consultation</option>
+                                <option value="bridal">Bridal & Occasion Wear</option>
+                                <option value="corporate">Corporate Wear</option>
+                                <option value="styling">Fashion Styling Consultation</option>
+                                <option value="bulk">Bulk/Event Outfits</option>
+                                <option value="alterations">Alterations & Adjustments</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Occasion/Event (if applicable)</label>
+                            <input type="text" id="occasion" name="occasion" placeholder="e.g., Wedding, Corporate Event, Birthday">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us more about your style preferences, color choices, design ideas, or any specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Confirm Appointment</button>
+                        
+                        <div class="success-message" id="successMessage">
+                            ✓ Your appointment has been successfully booked! We'll contact you shortly to confirm.
+                        </div>
+                        
+                        <p class="form-note">* Required fields. We respect your privacy and never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-subtitle">Visit Us</div>
+                <h2 class="section-title">Our Showroom</h2>
+                <p class="section-description">Walk-ins welcome! Visit us at our location in Uyo</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-info fade-in">
+                    <h3>Rebby Fashion World</h3>
+                    <div class="location-details">
+                        <div class="location-item">
+                            <span class="location-icon">📍</span>
+                            <div>
+                                <strong>Address:</strong><br>
+                                Plaza, by Ikot Ekpene Road<br>
+                                Uyo, Akwa Ibom State, Nigeria
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <span class="location-icon">🕐</span>
+                            <div>
+                                <strong>Business Hours:</strong><br>
+                                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 5:00 PM<br>
+                                Sunday: By Appointment Only
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <span class="location-icon">📞</span>
+                            <div>
+                                <strong>Contact:</strong><br>
+                                <a href="tel:+2349026940268">090 2694 0268</a><br>
+                                <a href="https://wa.me/2349026940268">WhatsApp Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.6819887474456!2d7.9285!3d5.0317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDEnNTQuMSJOIDfCsDU1JzQyLjYiRQ!5e0!3m2!1sen!2sng!4v1234567890" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Rebby Fashion World Location - Uyo, Akwa Ibom">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Rebby Fashion World</h3>
+                <p>Where elegance meets personal style. Creating confidence through fashion, one outfit at a time.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/2349026940268" class="social-link whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
+                    <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="booking.html">Book a Fitting</a></li>
+                    <li><a href="services.html">Custom Tailoring</a></li>
+                    <li><a href="services.html">Ready-to-Wear</a></li>
+                    <li><a href="services.html">Bridal Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+2349026940268">090 2694 0268</a></li>
+                    <li><a href="contact.html">Uyo, Akwa Ibom</a></li>
+                    <li><a href="https://wa.me/2349026940268">WhatsApp Chat</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rebby Fashion World. All rights reserved. | Crafted with passion in Uyo, Nigeria 🇳🇬</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2349026940268?text=Hi%20Rebby%20Fashion!%20I'm%20interested%20in%20learning%20more%20about%20your%20services." 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chat on WhatsApp">💬</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
